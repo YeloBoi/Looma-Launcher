@@ -36,6 +36,10 @@ Whether you want to report bugs, suggest features, improve documentation, or con
 
 The project license will be announced soon.
 
+## AI Assistance
+
+This project is developed with assistance from AI tools,
+including OpenAI ChatGPT and Anthropic Claude.
 ---
 پارسی:
 
@@ -72,6 +76,10 @@ Looma یک پروژه متن‌باز است و از مشارکت دیگران �
 
 چه بخواهید باگ گزارش کنید، پیشنهاد قابلیت جدید بدهید، مستندات را بهبود دهید یا در توسعه کد مشارکت کنید، کمک شما ارزشمند است.
 
+## کمک هوش مصنوعی
+
+این پروژه با کمک ابزارهای هوش مصنوعی،
+از جمله OpenAI ChatGPT و Anthropic Claude توسعه یافته است.
 ## مجوز استفاده (License)
 
 مجوز پروژه در آینده اعلام خواهد شد.
