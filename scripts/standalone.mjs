@@ -1,0 +1,12 @@
+import {readFile,writeFile} from 'node:fs/promises';
+import {resolve} from 'node:path';
+const folder=resolve('dist');
+let html=await readFile(resolve(folder,'index.html'),'utf8');
+const script=html.match(/<script[^>]*src="([^"]+)"[^>]*><\/script>/);
+const css=html.match(/<link[^>]*href="([^"]+\.css)"[^>]*>/);
+if(!script||!css)throw new Error('Missing build assets');
+const js=await readFile(resolve(folder,script[1]),'utf8');
+const style=await readFile(resolve(folder,css[1]),'utf8');
+html=html.replace(script[0],'').replace(css[0],()=>`<style>${style}</style>`).replace('</body>',()=>`<script type="module">${js.replaceAll('</script','<\\/script')}</script></body>`);
+await writeFile('Looma-preview.html',html);
+console.log('Standalone preview: Looma-preview.html');

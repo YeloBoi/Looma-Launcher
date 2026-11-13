@@ -1,0 +1,22 @@
+# Dependencies and build outputs
+node_modules/
+dist/
+src-tauri/target/
+*.tsbuildinfo
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+.npmrc
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Logs and editor/OS state
+*.log
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

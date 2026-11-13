@@ -1,0 +1,12 @@
+[package]
+name = "looma-launcher"
+version = "0.2.0"
+description = "Looma launcher interface preview"
+authors = ["Looma"]
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
