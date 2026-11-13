@@ -1,0 +1,7 @@
+{
+ "$schema":"https://schema.tauri.app/config/2",
+ "productName":"Looma Launcher","version":"0.2.0","identifier":"ir.loomalnchr.desktop",
+ "build":{"beforeDevCommand":"npm run dev","devUrl":"http://localhost:1420","beforeBuildCommand":"npm run build","frontendDist":"../dist"},
+ "app":{"windows":[{"label":"main","title":"Looma Launcher","width":1280,"height":820,"minWidth":1024,"minHeight":720,"decorations":false,"backgroundColor":"#0b131b","center":true}],"security":{"csp":"default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src ipc: http://ipc.localhost; object-src 'none'; base-uri 'self'"}},
+ "bundle":{"active":true,"targets":["nsis"],"icon":["icons/icon.ico"]}
+}
